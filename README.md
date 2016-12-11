@@ -7,13 +7,13 @@
 ## Lecturer: Dr. John Healy
 
 ### Introduction
-This is a Java RMI project which carries out a string comparing service for Distributed systems module. The string comparison algorithms were provided as a starter for the project, I did not write them. This project provides a web application, which takes input of 2 strings and selecting and algorithm to use for string comparison. Then it fires of a request into a queue and the RMI client takes requests of the queue and executes remote string comparing service using pass by reference between the 2 web application and RMI server.
+This is a Java RMI project which carries out a string comparing service for Distributed systems module. The string comparison algorithms were provided as a starter for the project, I did not write them. This project provides a web application, which takes inputs of 2 strings and selecting an algorithm to use for string comparison. Then it fires of a request into a queue and the RMI client takes requests of the queue and executes remote string comparing service using pass by reference between the web application and RMI server.
 
 ### Structure
 In this repo you have the comparator.war file which is the web application. This file can be deployed on a server like tomcat or IDE like eclipse ee.
-The string-service.jar is a jar file which contains code for RMI server, this need to be run before the web application can send it requests.
+The string-service.jar is a jar file which contains code for RMI server, this needs to be run before the web application can send it requests.
 ie.gmit.sw directory contains the source code for the java part of web application and RMI code.
-The HTML page and other files of the web application are contained inside the war file.
+The HTML page and other files of the web application are contained inside the comparator.war file.
 
 ### Runing this project
 1. Download this repo
